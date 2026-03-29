@@ -1,5 +1,5 @@
 import crypto from "crypto";
-import File from "../../model/cloudfile.js";
+import File from "../model/cloudfile.js";
 
 export const generateUploadSignature = async (req, res) => {
     try {

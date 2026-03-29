@@ -1,7 +1,7 @@
-import User from "../../model/user.js"
+import User from "../model/user.js"
 import bcrypt from "bcrypt"
 import jwt from "jsonwebtoken"
-import { registerSchema, loginSchema } from "../../validation/authvalidation.js";
+import { registerSchema, loginSchema } from "../validation/authvalidation.js";
 
 export const signup = async (req, res) => {
     try {

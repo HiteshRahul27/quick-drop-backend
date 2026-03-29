@@ -1,8 +1,8 @@
 import express from "express";
 import { generateUploadSignature, confirmUpload } from "../Controller/upload.controller.js";
 import { downloadFile, getFiles, delFiles } from "../Controller/fileController.js";
-import rate from "../../middleware/rate.js";
-import auth from "../../middleware/auth.js";
+import rate from "../middleware/rate.js";
+import auth from "../middleware/auth.js";
 
 const router = express.Router();
 

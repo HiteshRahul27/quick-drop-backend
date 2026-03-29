@@ -1,5 +1,5 @@
 import { v2 as cloudinary } from "cloudinary";
-import File from "../../model/cloudfile.js";
+import File from "../model/cloudfile.js";
 
 export const downloadFile = async (req, res) => {
     try {

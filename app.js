@@ -3,9 +3,9 @@ import dotenv from "dotenv";
 
 import connectDB from "./config/db.js";
 
-import authRoutes from "./Router/routes/auth.js";
-import uploadRoutes from "./Router/routes/upload.routes.js";
-import fileRoutes from "./Router/routes/file.routes.js";
+import authRoutes from "./routes/auth.js";
+import uploadRoutes from "./routes/upload.routes.js";
+import fileRoutes from "./routes/file.routes.js";
 
 import rate from "./middleware/rate.js";
 import auth from "./middleware/auth.js";
