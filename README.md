@@ -1,5 +1,5 @@
 # Quick Drop Backend 🚀
-A high-performance, **Headless API** for file-sharing and authentication. This project focuses exclusively on backend scalability, secure data integrity, and efficient cloud storage management.
+Built a backend file-sharing API with JWT authentication and direct-to-cloud uploads using pre-signed URLs, reducing server load by offloading file transfers to cloud storage.
 
 ```mermaid
 graph TD
