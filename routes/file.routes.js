@@ -1,5 +1,5 @@
 import express from "express";
-import { delFiles, downloadFile, getFiles } from "../Controller/fileController.js";
+import { delFiles, downloadFile, getFiles } from "../controller/fileController.js";
 import rate from "../middleware/rate.js";
 import auth from "../middleware/auth.js";
 

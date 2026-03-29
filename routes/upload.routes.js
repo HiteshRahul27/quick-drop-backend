@@ -1,6 +1,6 @@
 import express from "express";
-import { generateUploadSignature, confirmUpload } from "../Controller/upload.controller.js";
-import { downloadFile, getFiles, delFiles } from "../Controller/fileController.js";
+import { generateUploadSignature, confirmUpload } from "../controller/upload.controller.js";
+import { downloadFile, getFiles, delFiles } from "../controller/fileController.js";
 import rate from "../middleware/rate.js";
 import auth from "../middleware/auth.js";
 
