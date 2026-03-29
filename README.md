@@ -1,6 +1,38 @@
 # Quick Drop Backend 🚀
 A high-performance, **Headless API** for file-sharing and authentication. This project focuses exclusively on backend scalability, secure data integrity, and efficient cloud storage management.
 
+```mermaid
+graph TD
+    subgraph Client_Side [Client Layer]
+    A[Client / Postman]
+    end
+
+    subgraph Auth_Gate [Security Layer]
+    B[Rate Limiter] --> C{JWT Auth}
+    F[Rate Limiter] --> G{JWT Auth}
+    end
+
+    subgraph Backend_Services [Node.js/Express Server]
+    C -->|Authorized| D[Signature Controller]
+    G -->|Authorized| H[Confirm Controller]
+    end
+
+    subgraph Third_Party [External]
+    E[Cloudinary API]
+    end
+
+    subgraph Database [Storage]
+    I[(MongoDB Atlas)]
+    end
+
+    %% Flow Steps
+    A -->|1. Request Signature| B
+    D -->|2. signature + timestamp| A
+    A -->|3. Upload file + signature| E
+    A -->|4. Confirm Upload| F
+    H -->|5. Save Metadata| I
+```
+
 ## 🛠️ Tech Stack
 * **Runtime:** Node.js (ES Modules)
 * **Framework:** Express.js
