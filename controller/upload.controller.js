@@ -7,7 +7,7 @@ export const generateUploadSignature = async (req, res) => {
 
         await File.create({
             fileId,
-            userId: "user1",
+            userId: req.user,
             status: "UPLOADING"
         });
 
