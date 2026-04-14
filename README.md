@@ -1,6 +1,15 @@
 # Quick Drop Backend 🚀
 Built a backend file-sharing API with JWT authentication and direct-to-cloud uploads using pre-signed URLs, reducing server load by offloading file transfers to cloud storage.
 
+[![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white)](https://expressjs.com/)
+[![MongoDB Atlas](https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb&logoColor=white)](https://www.mongodb.com/atlas)
+[![Cloudinary](https://img.shields.io/badge/Cloudinary-Media-3448C5?logo=cloudinary&logoColor=white)](https://cloudinary.com/)
+[![JWT](https://img.shields.io/badge/Auth-JWT-black?logo=jsonwebtokens&logoColor=white)](https://jwt.io/)
+[![Bcrypt](https://img.shields.io/badge/Security-Bcrypt-4CAF50)](https://github.com/kelektiv/node.bcrypt.js)
+[![Rate Limiting](https://img.shields.io/badge/Security-Rate%20Limiting-red)](https://en.wikipedia.org/wiki/Rate_limiting)
+[![k6](https://img.shields.io/badge/k6-Load%20Testing-7D64FF?logo=k6&logoColor=white)](https://k6.io/)
+
 ```mermaid
 graph TD
     subgraph Client_Side [Client Layer]
